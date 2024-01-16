@@ -1,4 +1,14 @@
+# Tib0-portfolio
+
+This project is a showcase made with ❤️‍🔥, 👓 and 💻. It is a customizable portfolio. It display my professional path. 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+I used the following library to achieve my goals:
+ - React
+ - Gray Matter
+ - DaisyUI
+ - tsParticles
 
 ## Getting Started
 
@@ -20,17 +30,33 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Particles
 
-To learn more about Next.js, take a look at the following resources:
+Display a moving web behind hero section.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data stored in md files
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I've used Gray Matter to read from markdown files. We used this library to behave as a headless CMS.
 
-## Deploy on Vercel
+## Use of local storage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I store locally a value wether dark mode is activated or not.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Hooks
+
+I've used three hooks here to gain informations about device used, theme selected (light or dark) and to factorize local storage usage.
+
+## Serving
+
+The site is served from Netlify.
+
+## TODO
+
+- Fill md
+
+## Thanks
+
+vercel sample blog
+free code camps hooks article
+daisyui
+tsparticles

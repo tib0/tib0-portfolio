@@ -34,17 +34,50 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 Display a moving web behind hero section.
 
+![The San Juan Mountains are beautiful!](imgTsParticle.png)
+
 ## Data stored in md files
 
 I've used Gray Matter to read from markdown files. We used this library to behave as a headless CMS.
 
+> **tib0-portfolio\_data\experiences** 
+> 
+> ```
+> type ExperienceType = {
+>   slug: string;
+>   title: string;
+>   year: string;
+>   excerpt: string;
+>   date: string;
+>   skills: [string];
+> };
+> ```
+
+> **tib0-portfolio\_data\projects** md files store
+> 
+> ```
+> type ProjectType = {
+>   slug: string;
+>   title: string;
+>   date: string;
+>   coverImage: string;
+>   excerpt: string;
+>   skills: [string];
+> };
+> ```
+
 ## Use of local storage
 
-I store locally a value wether dark mode is activated or not.
+I store locally a value wether dark mode is activated or not.*TODO*
 
 ## Hooks
 
 I've used three hooks here to gain informations about device used, theme selected (light or dark) and to factorize local storage usage.
+
+> **tib0-portfolio\hooks**
+> - useDeviceDetect
+> - usePersistentStorageValue
+> - useThemeDetect
 
 ## Serving
 
@@ -55,17 +88,16 @@ The site is served from Netlify.
 - [x] Serve
 - [x] Fixing Theme switch
 - [x] Compress images
-- [x] https://nextjs.org/docs/pages/building-your-application/routing/custom-error
-- [ ] custom @netlify/plugin-lighthouse
-- [ ] Solve mobile issue with contact section
-  - [ ] Look into removing images from avatar
-  - [ ] control styling specific for mobile 
-- [ ] Fill md
+- [x] Custom error page
+- [x] custom @netlify/plugin-lighthouse
+- [x] Solve mobile issue with contact section
+- [ ] Enable theme persistency
+  - [ ] See also errors pages
 
 
 ## Thanks
 
-vercel sample blog
-free code camps hooks article
-daisyui
-tsparticles
+- **Vercel** sample blog : <https://github.com/vercel/next.js/tree/canary/examples/blog-starter>
+- **Free Code Camps** hooks article : <https://www.freecodecamp.org/news/how-to-create-react-hooks/>
+- **Daisy UI** : <https://daisyui.com>
+- **tsParticles** : <https://particles.js.org>

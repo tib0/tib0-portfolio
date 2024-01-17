@@ -20,8 +20,15 @@ const config: Config = {
           },
           ".wave": {
             "animation-name": "wave-animation",
-            "animation-duration": "5s",
+            "animation-duration": "4s",
             "animation-iteration-count": "2",
+            "transform-origin": "80% 85%",
+            "display": "inline-block",
+          },
+          ".chuckle": {
+            "animation": "monkey-chuckle 0.82s cubic-bezier(.36,.07,.19,.97) both",
+            "animation-duration": "1.2s",
+            "animation-iteration-count": "1",
             "transform-origin": "80% 85%",
             "display": "inline-block",
           },
@@ -46,8 +53,15 @@ const config: Config = {
           },
           ".wave": {
             "animation-name": "wave-animation",
-            "animation-duration": "5s",
+            "animation-duration": "4s",
             "animation-iteration-count": "2",
+            "transform-origin": "80% 85%",
+            "display": "inline-block",
+          },
+          ".monkey-chuckle": {
+            "animation": "monkey-chuckle 0.82s cubic-bezier(.36,.07,.19,.97) both",
+            "animation-duration": "1.2s",
+            "animation-iteration-count": "1",
             "transform-origin": "80% 85%",
             "display": "inline-block",
           },

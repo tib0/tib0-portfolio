@@ -55,7 +55,7 @@ The site is served from Netlify.
 - [x] Serve
 - [x] Fixing Theme switch
 - [x] Compress images
-- [ ] https://nextjs.org/docs/pages/building-your-application/routing/custom-error
+- [x] https://nextjs.org/docs/pages/building-your-application/routing/custom-error
 - [ ] custom @netlify/plugin-lighthouse
 - [ ] Solve mobile issue with contact section
   - [ ] Look into removing images from avatar

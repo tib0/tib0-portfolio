@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from "next/image"
 
 type Props = {
   alt: string;
@@ -6,7 +6,14 @@ type Props = {
 };
 
 const Avatar = ({ alt, src }: Props) => {
-  return (<Image src={src} alt={alt} width="64" height="64" />)
+  return (<Image 
+    src={src} 
+    alt={alt} 
+    className="rounded-full"
+    sizes="(max-width: 640px) 1.75rem, 2.25rem"
+    quality={65}
+    fill
+  />)
 }
 
 export default Avatar;

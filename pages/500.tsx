@@ -1,9 +1,13 @@
 import Footer from "@/components/footer";
+import Head from "next/head";
 import Link from "next/link";
 
 export default function Custom404() {
   return (
     <div id="index" data-theme="">
+      <Head>
+        <title>{`Folio Tib0 - 500`}</title>
+      </Head>
       <div className="hero min-h-screen bg-base-300 tsparticles-full">
         <div className="hero-content mt-10 text-center bg-base-100 bg-opacity-30 backdrop-blur transition-shadow sm:rounded-xl">
           <div className="max-w-md">

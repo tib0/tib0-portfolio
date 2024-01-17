@@ -9,6 +9,7 @@ import { getAllExperiences, getAllProjects } from '@/lib/api'
 import ProjectType from '@/interfaces/project'
 import ExperienceType from '@/interfaces/experience'
 import { useEffect, useState } from 'react'
+import Head from 'next/head'
 
 type Props = {
   allProjects: ProjectType[];
@@ -26,6 +27,9 @@ export default function Index({ allProjects, allExperiences }: Props) {
 
   return (
     <div id="index" data-theme="">
+      <Head>
+        <title>{`Folio Tib0`}</title>
+      </Head>
       <Header isDarkState={isDarkState} setDarkState={setDarkState} />
       <div id="infos">
         <Infos isDarkState={isDarkState} />

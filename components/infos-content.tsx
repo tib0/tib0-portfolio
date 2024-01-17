@@ -38,7 +38,7 @@ const InfosContent = () => {
               <Typewriter
                 options={{
                   wrapperClassName: "text-lg user-select-none",
-                  strings: ["Fullstack", "DevOps", "React", ".Net", "Java", "SQL", "AWS", "Linux", "Google Search Console", "Ansible", "Tesseract", "Docker", "Red Hat", "Shell", "Google Ad Word"],
+                  strings: ["Fullstack", "DevOps", "React", ".Net", "Java", "SQL", "AWS", "Linux", "Google Search Console", "Ansible", "Tesseract", "Docker", "Red Hat", "Shell", "Oracle", "Excel", "Google Ad Word"],
                   autoStart: true,
                   loop: true,
                 }}

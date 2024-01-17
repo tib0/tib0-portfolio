@@ -4,11 +4,11 @@ import Infos from '@/components/infos'
 import Projets from '@/components/projets'
 import Experiences from '@/components/experiences'
 import Contact from '@/components/contact'
-import usePersistentStorageValue from '@/hooks/usePersistentStorageValue'
 import { useThemeDetect } from '@/hooks/useThemeDetect'
 import { getAllExperiences, getAllProjects } from '@/lib/api'
 import ProjectType from '@/interfaces/project'
 import ExperienceType from '@/interfaces/experience'
+import { useEffect, useState } from 'react'
 
 type Props = {
   allProjects: ProjectType[];
@@ -16,14 +16,16 @@ type Props = {
 };
 
 export default function Index({ allProjects, allExperiences }: Props) {
+ 
   const isDarkTheme = useThemeDetect();
-  const [isDarkState, setDarkState] = usePersistentStorageValue(
-    "isDark",
-    isDarkTheme
-  )
+  const [isDarkState, setDarkState] = useState(isDarkTheme);
+
+  useEffect(() => {
+    if (document) document.querySelector('#index')?.setAttribute('data-theme', (isDarkState) ? "dracula" : "lemonade")
+  }, [isDarkState]);
 
   return (
-    <>
+    <div id="index" data-theme="">
       <Header isDarkState={isDarkState} setDarkState={setDarkState} />
       <div id="infos">
         <Infos isDarkState={isDarkState} />
@@ -38,7 +40,7 @@ export default function Index({ allProjects, allExperiences }: Props) {
         <Contact />
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

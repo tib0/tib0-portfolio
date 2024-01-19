@@ -7,7 +7,7 @@ import { loadSlim } from "@tsparticles/slim";
 import InfosContent from "./infos-content";
 import { CONFIG_HERO_PARTICLES } from "@/lib/constants";
 
-const Infos = ({ isDarkState }: any) => {
+const Infos = ({ localTheme }: any) => {
   const [init, setInit] = useState(false);
 
   const options: ISourceOptions = useMemo(
@@ -15,11 +15,11 @@ const Infos = ({ isDarkState }: any) => {
       ...CONFIG_HERO_PARTICLES,
       particles: {
         color: {
-          value: isDarkState ? "#ffffff" : "#000000",
+          value: (localTheme == "dracula") ? "#ffffff" : "#000000",
           opacity: 0.9,
         },
         links: {
-          color: isDarkState ? "#ffffff" : "#000000",
+          color: (localTheme == "dracula") ? "#ffffff" : "#000000",
           distance: 150,
           enable: true,
           opacity: 0.8,
@@ -27,9 +27,8 @@ const Infos = ({ isDarkState }: any) => {
         },
         ...CONFIG_HERO_PARTICLES.particles
       },
-      
     }),
-    [isDarkState],
+    [localTheme],
   );
 
   useEffect(() => {
@@ -49,7 +48,6 @@ const Infos = ({ isDarkState }: any) => {
             options={options}
             className="min-h-screen"
           />
-
           <InfosContent />
         </> :
         <>

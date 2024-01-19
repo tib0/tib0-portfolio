@@ -3,8 +3,9 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default function Custom404() {
+ 
   return (
-    <div id="index" data-theme="">
+    <div id="index">
       <Head>
         <title>{`Folio Tib0 - 500`}</title>
       </Head>

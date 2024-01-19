@@ -31,14 +31,14 @@ const InfosContent = () => {
             <span className="font-bold text-lg leading-5">à votre disposition</span>
             {`. Vous pouvez me contacter depuis la section `}
             <span className="font-bold text-lg leading-5">contact</span>
-            {`, je vous réponds dans l'heure.`}
+            {`, je vous réponds dans les plus brefs délais.`}
           </p>
           <div className="w-full py-4">
             <h2>
               <Typewriter
                 options={{
                   wrapperClassName: "text-lg user-select-none",
-                  strings: ["Fullstack", "DevOps", "React", ".Net", "Java", "SQL", "AWS", "Linux", "Google Search Console", "Ansible", "Tesseract", "Docker", "Red Hat", "Shell", "Oracle", "Excel", "Google Ad Word"],
+                  strings: ["Fullstack", "DevOps", "React", ".Net", "Java", "SQL", "AWS", "Netlify", "Linux", "Google Search Console", "Ansible", "Tesseract", "Docker", "Red Hat", "Shell", "Oracle", "Excel", "Google Ad Word"],
                   autoStart: true,
                   loop: true,
                 }}

@@ -10,6 +10,7 @@ import ProjectType from '@/interfaces/project'
 import ExperienceType from '@/interfaces/experience'
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
+import usePersistentStorageValue from '@/hooks/usePersistentStorageValue'
 
 type Props = {
   allProjects: ProjectType[];
@@ -18,21 +19,21 @@ type Props = {
 
 export default function Index({ allProjects, allExperiences }: Props) {
  
-  const isDarkTheme = useThemeDetect();
-  const [isDarkState, setDarkState] = useState(isDarkTheme);
+  const isDarkThemeByDefault = useThemeDetect();
+  const [localTheme, setLocalTheme] = usePersistentStorageValue('theme',  (isDarkThemeByDefault) ? "dracula" : "lemonade");
 
   useEffect(() => {
-    if (document) document.querySelector('#index')?.setAttribute('data-theme', (isDarkState) ? "dracula" : "lemonade")
-  }, [isDarkState]);
+    if (document) document.querySelector('#index')?.setAttribute('data-theme', localTheme)
+  }, [localTheme]);
 
   return (
     <div id="index" data-theme="">
       <Head>
         <title>{`Folio Tib0`}</title>
       </Head>
-      <Header isDarkState={isDarkState} setDarkState={setDarkState} />
+      <Header localTheme={localTheme} setLocalTheme={setLocalTheme} />
       <div id="infos">
-        <Infos isDarkState={isDarkState} />
+        <Infos localTheme={localTheme} />
       </div>
       <div id="experiences">
         <Experiences allExperiences={allExperiences} />

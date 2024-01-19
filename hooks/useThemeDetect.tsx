@@ -5,9 +5,9 @@ export const useThemeDetect = () => {
   const getCurrentTheme = () => (typeof window !== 'undefined') ? 
     window.matchMedia("(prefers-color-scheme: dark)").matches :
     false;
-  const [isDarkTheme, setIsDarkTheme] = useState(getCurrentTheme());
+  const [isDarkThemeByDefault, setisDarkThemeByDefault] = useState(getCurrentTheme());
   const mediaQueryListener = ((e: any) => {
-    setIsDarkTheme(e.matches);
+    setisDarkThemeByDefault(e.matches);
   });
 
   useEffect(() => {
@@ -20,5 +20,5 @@ export const useThemeDetect = () => {
     }
   }, []);
 
-  return isDarkTheme;
+  return isDarkThemeByDefault;
 }

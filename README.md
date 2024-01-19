@@ -2,6 +2,8 @@
 
 This project is a showcase made with ❤️‍🔥, 👓 and 💻. It is a customizable portfolio. It display my professional path. 
 
+### [Demo available here.](https://tib0-portfolio.netlify.app)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 I used the following library to achieve my goals:
@@ -81,23 +83,12 @@ I've used three hooks here to gain informations about device used, theme selecte
 
 ## Serving
 
-The site is served from Netlify.
-
-## TODO
-
-- [x] Serve
-- [x] Fixing Theme switch
-- [x] Compress images
-- [x] Custom error page
-- [x] custom @netlify/plugin-lighthouse
-- [x] Solve mobile issue with contact section
-- [ ] Enable theme persistency
-  - [ ] See also errors pages
-
+The site is served with [Netlify](https://www.netlify.com) services.
 
 ## Thanks
 
 - **Vercel** sample blog : <https://github.com/vercel/next.js/tree/canary/examples/blog-starter>
 - **Free Code Camps** hooks article : <https://www.freecodecamp.org/news/how-to-create-react-hooks/>
+- **Radizon** storage : <https://radzion.com/blog/hook-storage>
 - **Daisy UI** : <https://daisyui.com>
 - **tsParticles** : <https://particles.js.org>

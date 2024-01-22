@@ -2,7 +2,8 @@ type ProjectType = {
   slug: string;
   title: string;
   date: string;
-  coverImage: string;
+  coverImages: [string];
+  link: string;
   excerpt: string;
   skills: [string];
 };

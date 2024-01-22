@@ -52,7 +52,8 @@ export default function Index({ allProjects, allExperiences }: Props) {
 export const getStaticProps = async () => {
   const allProjects = getAllProjects([
     'slug',
-    'coverImage',
+    'coverImages',
+    'link',
     'title',
     'excerpt',
     'skills',

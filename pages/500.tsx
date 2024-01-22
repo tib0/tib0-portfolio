@@ -1,11 +1,21 @@
 import Footer from "@/components/footer";
+import usePersistentStorageValue from "@/hooks/usePersistentStorageValue";
+import { useThemeDetect } from "@/hooks/useThemeDetect";
 import Head from "next/head";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Custom404() {
- 
+
+  const isDarkThemeByDefault = useThemeDetect();
+  const [localTheme, setLocalTheme] = usePersistentStorageValue('theme',  (isDarkThemeByDefault) ? "dracula" : "lemonade");
+
+  useEffect(() => {
+    if (document) document.querySelector('#index')?.setAttribute('data-theme', localTheme)
+  }, [localTheme]);
+
   return (
-    <div id="index">
+    <div id="index" data-theme="">
       <Head>
         <title>{`Folio Tib0 - 500`}</title>
       </Head>

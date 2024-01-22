@@ -2,7 +2,7 @@
 
 This project is a showcase made with ❤️‍🔥, 👓 and 💻. It is a customizable portfolio. It display my professional path. 
 
-### [Demo available here.](https://tib0-portfolio.netlify.app)
+### [Demo available here.](https://folio.tib0.com)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -34,9 +34,9 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Particles
 
-Display a moving web behind hero section.
+Display a moving web behind hero section. Interactive, made from tsParticle sample.
 
-![The San Juan Mountains are beautiful!](imgTsParticle.png)
+![Sample image of moving web particles!](imgTsParticle.png)
 
 ## Data stored in md files
 
@@ -62,7 +62,7 @@ I've used Gray Matter to read from markdown files. We used this library to behav
 >   slug: string;
 >   title: string;
 >   date: string;
->   coverImage: string;
+>   coverImages: [string];
 >   excerpt: string;
 >   skills: [string];
 > };
@@ -70,7 +70,7 @@ I've used Gray Matter to read from markdown files. We used this library to behav
 
 ## Use of local storage
 
-I store locally a value wether dark mode is activated or not.*TODO*
+I store locally a value wether dark mode is activated or not.
 
 ## Hooks
 

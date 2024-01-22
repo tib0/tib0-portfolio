@@ -27,7 +27,7 @@ const Header = ({ localTheme, setLocalTheme }: any) => {
             {menuLink}
           </ul>
         </div>
-        <Link className="btn btn-link text-xl" href="#infos">Folio Tib0.</Link>
+        <Link className="btn btn-link text-xl" href="/">Folio Tib0.</Link>
         {/* MOBILE */}
         <label className="swap swap-rotate md:hidden" aria-label="Swap-theme">
           {themeSwap}

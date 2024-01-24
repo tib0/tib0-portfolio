@@ -4,10 +4,10 @@ const Footer = () => {
   return (
     <>
       <footer className="footer p-10 bg-neutral text-neutral-content">
-        <aside>
+        <aside className="order-last md:order-first">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M5.52 19c.64-2.2 1.84-3 3.22-3h6.52c1.38 0 2.58.8 3.22 3" /><circle cx="12" cy="10" r="3" /><circle cx="12" cy="12" r="10" /></svg>
           <p className="text-white font-bold">Thibault MARTIN</p><p className="text-white">Développeur Web Fullstack</p>
-          <p className="currentColor font-light">Tous droits réservés © Thibault MARTIN | 2024 / 2024</p>
+          <p className="currentColor font-light">© Site créé par Thibault MARTIN | 2024 / 2024</p>
         </aside>
         <nav>
           <header className="footer-title opacity-100">Social</header>

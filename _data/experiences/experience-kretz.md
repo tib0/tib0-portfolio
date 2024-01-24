@@ -1,6 +1,6 @@
 ---
 title: "Kretz Real Estate"
-year: "2021"
+year: "2023"
 excerpt: "Le but initial de la mission est d'améliorer le temps de mise en ligne des annonces. Nous continuerons une fois ce point validé notre collaboration en ajoutant des fonctionnalités attendues."
 skills:
   - React

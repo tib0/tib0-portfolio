@@ -1,7 +1,7 @@
 ---
 title: "Generali"
 year: "2015"
-excerpt: "Changement des statu légaux - Modification des adresses et mentions légales dans l'ensemble des référentiels documentaires (communication entre la compagnie et ses assurés)."
+excerpt: "Changement des statuts légaux - Modification des adresses et mentions légales dans l'ensemble des référentiels documentaires (communication entre la compagnie et ses assurés)."
 skills:
   - .Net
   - Shell

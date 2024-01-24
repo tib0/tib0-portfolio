@@ -1,6 +1,6 @@
 ---
 title: "Natixis"
-year: "2019"
+year: "2021"
 excerpt: "Refonte et migrations d'applications dédiées aux services Risques."
 skills:
   - C#

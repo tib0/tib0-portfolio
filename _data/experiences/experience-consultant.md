@@ -1,7 +1,7 @@
 ---
 title: "Consultant"
 year: "2015"
-excerpt: "A partir de 2015, je deviens consultant Analyste Développeur chez Amexio, une société de service spécialisée dans la GED."
+excerpt: "A partir de 2015, je deviens consultant Analyste Développeur chez Amexio, une société ESN / SSII spécialisée dans la GED."
 skills:
   - Java
   - C#

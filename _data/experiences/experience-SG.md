@@ -1,6 +1,6 @@
 ---
 title: "Société Générale"
-year: "2018"
+year: "2019"
 excerpt: "Support et développement du front web en React.js pour la gestion de documents à destination des différents métiers juridique de la banque."
 skills:
   - React

@@ -27,7 +27,7 @@ const InfosContent = () => {
             {` dans vos projets informatiques.`}
           </p>
           <p className="pt-2 text-base user-select-none">
-            {`Du receuil des besoins à l'implémentation de nouveautés, je répondrais à `}
+            {`Du recueil des besoins à l'implémentation de nouveautés, je répondrais à `}
             <span className="font-bold text-lg leading-5">vos attentes</span>
             {` en mettant `}
             <span className="font-bold text-lg leading-5">mon savoir faire</span>

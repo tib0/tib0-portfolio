@@ -1,3 +1,5 @@
+import { ISourceOptions } from "@tsparticles/engine"
+
 export const EXAMPLE_PATH = 'Hey !'
 export const NAME = 'tib0 martin'
 
@@ -14,16 +16,16 @@ const enum MoveDirection {
     outside = "outside",
     inside = "inside"
 }
+
 const enum OutMode {
-    bounce = "bounce",
-    bounceHorizontal = "bounce-horizontal",
-    bounceVertical = "bounce-vertical",
-    none = "none",
-    out = "out",
-    destroy = "destroy",
-    split = "split"
+  bounce = "bounce",
+  none = "none",
+  out = "out",
+  destroy = "destroy",
+  split = "split"
 }
-export const CONFIG_HERO_PARTICLES = {
+
+export const CONFIG_HERO_PARTICLES: ISourceOptions = {
     fullScreen: { enable: false },
     background: {
       color: {
@@ -56,9 +58,7 @@ export const CONFIG_HERO_PARTICLES = {
       move: {
         direction: MoveDirection.none,
         enable: true,
-        outModes: {
-          default: OutMode.out,
-        },
+        outModes: OutMode.out,
         random: false,
         speed: 1,
         straight: false,

@@ -7,6 +7,5 @@ link: https://folio.tib0.com
 skills:
   - React
   - GrayMatter
-  - Nex
+  - NextJS
 ---
-Content eventually writen in *Markdown*

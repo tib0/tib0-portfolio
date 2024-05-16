@@ -21,14 +21,14 @@ const Projets = ({ allProjects }: any) => {
                     height="464"
                   />                        
                 </figure>
-                <div className="card-body">
+                <div className="card-body px-4 pt-4 md:px-8 md:pt-6">
                   <h2 className="card-title">
                     <Link target="blank" href={post.link}>
                       {post.title}
                     </Link>
                   </h2>
                   <p className="text-left">{post.excerpt}</p>
-                  <div className="card-actions justify-center">
+                  <div className="card-actions justify-center pt-2">
                     {post?.skills?.map((skill: any) =>
                       <div key={skill} className="badge badge-outline">{skill}</div>
                     )}

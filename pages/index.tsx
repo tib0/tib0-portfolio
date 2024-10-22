@@ -1,4 +1,4 @@
-import Header from '../components/header'
+import Header from '@/components/header'
 import Footer from '@/components/footer'
 import Infos from '@/components/infos'
 import Projets from '@/components/projets'
@@ -18,9 +18,9 @@ type Props = {
 };
 
 export default function Index({ allProjects, allExperiences }: Props) {
- 
+
   const isDarkThemeByDefault = useThemeDetect();
-  const [localTheme, setLocalTheme] = usePersistentStorageValue('theme',  (isDarkThemeByDefault) ? "dracula" : "lemonade");
+  const [localTheme, setLocalTheme] = usePersistentStorageValue('theme', (isDarkThemeByDefault) ? "dracula" : "lemonade");
 
   useEffect(() => {
     if (document) document.querySelector('#index')?.setAttribute('data-theme', localTheme)
@@ -70,6 +70,6 @@ export const getStaticProps = async () => {
   ])
 
   return {
-    props: { allProjects, allExperiences},
+    props: { allProjects, allExperiences },
   }
 }

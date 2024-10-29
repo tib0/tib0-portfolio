@@ -8,7 +8,7 @@ import { useThemeDetect } from '@/hooks/useThemeDetect'
 import { getAllExperiences, getAllProjects } from '@/lib/api'
 import ProjectType from '@/interfaces/project'
 import ExperienceType from '@/interfaces/experience'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Head from 'next/head'
 import usePersistentStorageValue from '@/hooks/usePersistentStorageValue'
 
